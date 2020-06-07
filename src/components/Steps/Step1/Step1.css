@@ -1,0 +1,23 @@
+.step1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  transform: translateY(-30%);
+}
+
+.triangle {
+  z-index: -1;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 15rem;
+  width: 15rem;
+}
+
+@media screen and (min-width: 375px) {
+  .step1 {
+    transform: translateY(-14%);
+  }
+}

@@ -1,0 +1,71 @@
+.Modal {
+  position: fixed;
+  max-width: 100%;
+  height: 100%;
+  z-index: 500;
+  background-color: white;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-headline {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.modal-rules {
+  height: 22rem;
+  width: 24rem;
+  margin-top: -10rem;
+}
+
+.modal-close {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  fill: hsl(214, 47%, 23%);
+}
+
+@media screen and (min-width: 375px) {
+  .Modal {
+    min-width: 24%;
+    height: 35%;
+    padding: 2rem;
+    margin-top: 13rem;
+    border-radius: 10px;
+  }
+
+  .modal-headline {
+    align-self: start;
+  }
+
+  .modal-rules {
+    height: 18rem;
+    width: 20rem;
+
+    order: 2;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 2rem;
+    top: 3rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .Modal {
+    height: 40%;
+    max-width: 24%;
+  }
+}

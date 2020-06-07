@@ -1,0 +1,67 @@
+.step4 {
+  width: 26rem;
+  margin-top: 0.7rem;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.announcement {
+  width: 100%;
+  transform: translateY(-41%);
+
+  display: flex;
+  align-items: center;
+}
+
+.announcement-headline {
+  margin-top: 7rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+.btn-reset {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.8rem 4rem;
+  letter-spacing: 0.1rem;
+  background-color: #fff;
+  color: hsl(229, 25%, 31%);
+}
+
+@media screen and (min-width: 1366px) {
+  .step4 {
+    width: 50rem;
+    margin-top: -17rem;
+
+    flex-wrap: nowrap;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  .announcement {
+    transform: translateY(-8%);
+
+    order: 1;
+  }
+
+  .announcement-headline {
+    margin-top: 10rem;
+    margin-bottom: 0;
+  }
+
+  .user-headline,
+  .house-headline {
+    order: 0;
+  }
+
+  .game-element {
+    order: 1;
+  }
+}

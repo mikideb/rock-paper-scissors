@@ -1,0 +1,54 @@
+.game-element {
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent 1rem solid;
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+}
+
+.scissors {
+  grid-column: 3 / 4;
+  background-image: linear-gradient(white, white),
+    linear-gradient(0deg, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.rock {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-image: linear-gradient(white, white),
+    linear-gradient(0deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.paper {
+  background-image: linear-gradient(white, white),
+    linear-gradient(0deg, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.house-pick {
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(20, 21, 57, 0.4);
+  border-radius: 50%;
+}
+
+.picked {
+  justify-self: center;
+}
+
+@media screen and (min-width: 850px) {
+  .game-element,
+  .house-pick {
+    width: 10rem;
+    height: 10rem;
+  }
+}
