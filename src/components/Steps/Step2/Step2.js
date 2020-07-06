@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { navigate } from '@reach/router';
 
 import GameElement from '../../UI/GameElement/GameElement';
@@ -43,3 +44,12 @@ const Step2 = ({ userPick, setHousePick, gameElements }) => {
 };
 
 export default Step2;
+
+Step2.propTypes = {
+  userPick: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    iconURL: PropTypes.string.isRequired
+  }).isRequired,
+  setHousePick: PropTypes.func.isRequired,
+  gameElements: PropTypes.array.isRequired
+};

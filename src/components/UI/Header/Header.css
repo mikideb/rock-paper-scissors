@@ -46,7 +46,7 @@
 
 @media screen and (min-width: 375px) {
   .header {
-    max-width: 57vw;
+    min-width: 57vw;
   }
 }
 
@@ -64,6 +64,6 @@
 
 @media screen and (min-width: 1366px) {
   .header {
-    max-width: 35vw;
+    min-width: 35vw;
   }
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { navigate } from '@reach/router';
 
 import GameElement from '../../UI/GameElement/GameElement';
 
-const StepThree = ({ userPick, housePick }) => {
+const Step3 = ({ userPick, housePick }) => {
   return (
     <div className="step2" onClick={() => navigate('/4')}>
       <div className="col">
@@ -26,4 +27,15 @@ const StepThree = ({ userPick, housePick }) => {
   );
 };
 
-export default StepThree;
+export default Step3;
+
+Step3.propTypes = {
+  userPick: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    iconURL: PropTypes.string.isRequired
+  }).isRequired,
+  housePick: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    iconURL: PropTypes.string.isRequired
+  }).isRequired
+};

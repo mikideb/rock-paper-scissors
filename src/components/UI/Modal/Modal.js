@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'prop-types';
 
 import Backdrop from '../Backdrop/Backdrop';
 
@@ -20,3 +21,9 @@ const Modal = ({ children, showModal, toggleModal }) => (
 );
 
 export default Modal;
+
+Modal.propTypes = {
+  children: Proptypes.node.isRequired,
+  showModal: Proptypes.bool.isRequired,
+  toggleModal: Proptypes.func.isRequired
+};

@@ -33,6 +33,10 @@
   color: hsl(229, 25%, 31%);
 }
 
+.btn-reset:hover {
+  color: red;
+}
+
 @media screen and (min-width: 1366px) {
   .step4 {
     width: 50rem;

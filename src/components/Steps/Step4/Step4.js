@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { navigate } from '@reach/router';
 
 import GameElement from '../../UI/GameElement/GameElement';
 
 import './Step4.css';
 
-const StepFour = ({ userPick, housePick, setScore, score, setUserPick }) => {
+const Step4 = ({ userPick, housePick, setScore, score, setUserPick }) => {
   const [gameResult, setGameResult] = useState('');
 
   useEffect(() => {
@@ -84,4 +85,18 @@ const StepFour = ({ userPick, housePick, setScore, score, setUserPick }) => {
   );
 };
 
-export default StepFour;
+export default Step4;
+
+Step4.propTypes = {
+  userPick: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    iconURL: PropTypes.string.isRequired
+  }).isRequired,
+  housePick: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    iconURL: PropTypes.string.isRequired
+  }).isRequired,
+  setScore: PropTypes.func.isRequired,
+  score: PropTypes.number.isRequired,
+  setUserPick: PropTypes.func.isRequired
+};

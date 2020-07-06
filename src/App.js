@@ -17,7 +17,7 @@ import scissors from './images/icon-scissors.svg';
 
 import './App.css';
 
-function App() {
+const App = () => {
   const [score, setScore] = useState(Number(localStorage.getItem('score')));
   const [showModal, setShowModal] = useState(false);
   const [userPick, setUserPick] = useState({
@@ -95,6 +95,6 @@ function App() {
       </footer>
     </div>
   );
-}
+};
 
 export default App;
